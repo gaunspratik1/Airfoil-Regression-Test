@@ -34,9 +34,7 @@ def predict():
     data=[float(x) for x in request.form.values()]
     final_features = [np.array(data)]
     print(data)
-    
-
-    output = round(prediction[0], 2)
+    output = model.predict(final_features)[0]
 
     if output == -1:
         fire = 'No Fire'
