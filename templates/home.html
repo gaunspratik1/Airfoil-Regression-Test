@@ -18,6 +18,7 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
+<<<<<<< HEAD
       <input type="text" name="Frequency" placeholder="Frequency" required="required" /><br>
     	<input type="text" name="Angle of attack" placeholder="Angle of attack" required="required" /><br>
         <input type="text" name="Chord length" placeholder="Chord length" required="required" /><br>
@@ -25,6 +26,17 @@
         <input type="text" name="Suction side" placeholder="Suction side" required="required" /><br>
 
        
+=======
+      <input type="text" name="Temperature" placeholder="Temperature" required="required" /><br>
+    	<input type="text" name="RH" placeholder="RH" required="required" /><br>
+        <input type="text" name="WS" placeholder="WS" required="required" /><br>
+        <input type="text" name="RAIN" placeholder="RAIN" required="required" /><br>
+        <input type="text" name="FFMC" placeholder="FFMC" required="required" /><br>
+        <input type="text" name="DMC" placeholder="DMC" required="required" /><br>
+        <input type="text" name="DC" placeholder="DC" required="required" /><br>
+        <input type="text" name="ISI" placeholder="ISI" required="required" /><br>
+        <input type="text" name="BUI" placeholder="BUI" required="required" /><br>
+>>>>>>> 1810569 (first test commit)
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
