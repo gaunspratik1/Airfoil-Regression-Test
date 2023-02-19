@@ -41,7 +41,7 @@ def predict():
     else:
         fire = 'Fire'
 
-    return render_template('home.html', prediction_text="Airfoil pressure is  {}".format(fire))
+    return render_template('home.html', prediction_text="There will be  {}".format(fire))
 
 
 
